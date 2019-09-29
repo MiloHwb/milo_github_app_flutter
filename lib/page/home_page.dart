@@ -4,6 +4,7 @@ import 'package:android_intent/android_intent.dart';
 import 'package:flutter/material.dart';
 import 'package:milo_github_app_flutter/common/style/milo_style.dart';
 import 'package:milo_github_app_flutter/widget/milo_tabbar_widget.dart';
+import 'package:milo_github_app_flutter/widget/milo_title_bar.dart';
 
 import 'dynamic_page.dart';
 import 'my_page.dart';
@@ -48,6 +49,7 @@ class HomePage extends StatelessWidget {
     return WillPopScope(
       onWillPop: _dialogExitApp,
       child: MiloTabBarWidget(
+        //todo 抽屉
         drawer: null,
         type: MiloTabBarWidget.BOTTOM_TAB,
         tabItems: tabs,
@@ -58,6 +60,15 @@ class HomePage extends StatelessWidget {
         ],
         backgroundColor: MILOColors.primarySwatch,
         indicatorColor: Color(MILOColors.white),
+        title: MiloTitleBar(
+          'MiloGithubAppFlutter',
+          iconData: MILOIcons.MAIN_SEARCH,
+          needRightLocalIcon: true,
+          onPressed: (){
+            //todo 跳转搜索
+            print('goSearch');
+          },
+        ),
       ),
     );
   }
