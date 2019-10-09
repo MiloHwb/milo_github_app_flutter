@@ -58,8 +58,8 @@ class HomePage extends StatelessWidget {
           TrendPage(),
           MyPage(),
         ],
-        backgroundColor: MILOColors.primarySwatch,
-        indicatorColor: Color(MILOColors.white),
+        backgroundColor: MiloColors.primarySwatch,
+        indicatorColor: Color(MiloColors.white),
         title: MiloTitleBar(
           'MiloGithubAppFlutter',
           iconData: MILOIcons.MAIN_SEARCH,

@@ -23,7 +23,7 @@ class _WelcomePageState extends State<WelcomePage> {
   Widget build(BuildContext context) {
     const double size = 200;
     return Container(
-      color: Color(MILOColors.white),
+      color: Color(MiloColors.white),
       child: Stack(
         children: <Widget>[
           Center(

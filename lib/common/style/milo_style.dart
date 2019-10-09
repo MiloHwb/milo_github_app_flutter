@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 ///颜色
-class MILOColors {
+class MiloColors {
   static const String primaryValueString = "#24292E";
   static const String primaryLightValueString = "#42464b";
   static const String primaryDarkValueString = "#121917";
@@ -43,8 +43,172 @@ class MILOColors {
   );
 }
 
+///文本样式
+class MiloConstant {
+  static const String app_default_share_url = "https://github.com/CarGuo/GSYGithubAppFlutter";
+
+  static const lagerTextSize = 30.0;
+  static const bigTextSize = 23.0;
+  static const normalTextSize = 18.0;
+  static const middleTextWhiteSize = 16.0;
+  static const smallTextSize = 14.0;
+  static const minTextSize = 12.0;
+
+  static const minText = TextStyle(
+    color: Color(MiloColors.subLightTextColor),
+    fontSize: minTextSize,
+  );
+
+  static const smallTextWhite = TextStyle(
+    color: Color(MiloColors.textColorWhite),
+    fontSize: smallTextSize,
+  );
+
+  static const smallText = TextStyle(
+    color: Color(MiloColors.mainTextColor),
+    fontSize: smallTextSize,
+  );
+
+  static const smallTextBold = TextStyle(
+    color: Color(MiloColors.mainTextColor),
+    fontSize: smallTextSize,
+    fontWeight: FontWeight.bold,
+  );
+
+  static const smallSubLightText = TextStyle(
+    color: Color(MiloColors.subLightTextColor),
+    fontSize: smallTextSize,
+  );
+
+  static const smallActionLightText = TextStyle(
+    color: Color(MiloColors.actionBlue),
+    fontSize: smallTextSize,
+  );
+
+  static const smallMiLightText = TextStyle(
+    color: Color(MiloColors.miWhite),
+    fontSize: smallTextSize,
+  );
+
+  static const smallSubText = TextStyle(
+    color: Color(MiloColors.subTextColor),
+    fontSize: smallTextSize,
+  );
+
+  static const middleText = TextStyle(
+    color: Color(MiloColors.mainTextColor),
+    fontSize: middleTextWhiteSize,
+  );
+
+  static const middleTextWhite = TextStyle(
+    color: Color(MiloColors.textColorWhite),
+    fontSize: middleTextWhiteSize,
+  );
+
+  static const middleSubText = TextStyle(
+    color: Color(MiloColors.subTextColor),
+    fontSize: middleTextWhiteSize,
+  );
+
+  static const middleSubLightText = TextStyle(
+    color: Color(MiloColors.subLightTextColor),
+    fontSize: middleTextWhiteSize,
+  );
+
+  static const middleTextBold = TextStyle(
+    color: Color(MiloColors.mainTextColor),
+    fontSize: middleTextWhiteSize,
+    fontWeight: FontWeight.bold,
+  );
+
+  static const middleTextWhiteBold = TextStyle(
+    color: Color(MiloColors.textColorWhite),
+    fontSize: middleTextWhiteSize,
+    fontWeight: FontWeight.bold,
+  );
+
+  static const middleSubTextBold = TextStyle(
+    color: Color(MiloColors.subTextColor),
+    fontSize: middleTextWhiteSize,
+    fontWeight: FontWeight.bold,
+  );
+
+  static const normalText = TextStyle(
+    color: Color(MiloColors.mainTextColor),
+    fontSize: normalTextSize,
+  );
+
+  static const normalTextBold = TextStyle(
+    color: Color(MiloColors.mainTextColor),
+    fontSize: normalTextSize,
+    fontWeight: FontWeight.bold,
+  );
+
+  static const normalSubText = TextStyle(
+    color: Color(MiloColors.subTextColor),
+    fontSize: normalTextSize,
+  );
+
+  static const normalTextWhite = TextStyle(
+    color: Color(MiloColors.textColorWhite),
+    fontSize: normalTextSize,
+  );
+
+  static const normalTextMitWhiteBold = TextStyle(
+    color: Color(MiloColors.miWhite),
+    fontSize: normalTextSize,
+    fontWeight: FontWeight.bold,
+  );
+
+  static const normalTextActionWhiteBold = TextStyle(
+    color: Color(MiloColors.actionBlue),
+    fontSize: normalTextSize,
+    fontWeight: FontWeight.bold,
+  );
+
+  static const normalTextLight = TextStyle(
+    color: Color(MiloColors.primaryLightValue),
+    fontSize: normalTextSize,
+  );
+
+  static const largeText = TextStyle(
+    color: Color(MiloColors.mainTextColor),
+    fontSize: bigTextSize,
+  );
+
+  static const largeTextBold = TextStyle(
+    color: Color(MiloColors.mainTextColor),
+    fontSize: bigTextSize,
+    fontWeight: FontWeight.bold,
+  );
+
+  static const largeTextWhite = TextStyle(
+    color: Color(MiloColors.textColorWhite),
+    fontSize: bigTextSize,
+  );
+
+  static const largeTextWhiteBold = TextStyle(
+    color: Color(MiloColors.textColorWhite),
+    fontSize: bigTextSize,
+    fontWeight: FontWeight.bold,
+  );
+
+  static const largeLargeTextWhite = TextStyle(
+    color: Color(MiloColors.textColorWhite),
+    fontSize: lagerTextSize,
+    fontWeight: FontWeight.bold,
+  );
+
+  static const largeLargeText = TextStyle(
+    color: Color(MiloColors.primaryValue),
+    fontSize: lagerTextSize,
+    fontWeight: FontWeight.bold,
+  );
+}
+
 class MILOIcons {
   static const String FONT_FAMILY = 'wxcIconFont';
+  static const String DEFAULT_USER_ICON = 'static/images/logo.png';
 
   static const IconData HOME = const IconData(0xe624, fontFamily: MILOIcons.FONT_FAMILY);
   static const IconData MORE = const IconData(0xe674, fontFamily: MILOIcons.FONT_FAMILY);
